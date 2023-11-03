@@ -5,7 +5,7 @@
   font-family: "Spartan", sans-serif;
 }
 
-/* Header Start */
+/* Header */
 
 #header {
   display: flex;
@@ -79,6 +79,19 @@
   line-height: 2;
 }
 
+.project {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.project img {
+  margin-right: 10px;
+  width: 200px;
+}
+
+/* Portrait */
+
 @media only screen and (orientation:portrait) {
   #header {
     height: 160px;
@@ -114,6 +127,8 @@
     transform: none !important;
   }
 }
+
+/* Landscape */
 
 @media only screen and (orientation:landscape) {
   .righthand {
