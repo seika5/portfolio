@@ -32,26 +32,38 @@ jQuery(document).ready(function() {
     var moving = 0;
 
     setInterval(function() {
-        $(document).mousemove(function (e) {
-            if (mouseX != e.pageX - 1000 && mouseY != e.pageY - 1000) {
-                mouseX = e.pageX - 1000;
-                mouseY = e.pageY - 1000;
-                if (moving < 2950) {
-                    moving += 50;
-                } else {
-                    moving = 3000;
+        if(window.innerHeight > window.innerWidth){
+            console.log("vert");
+            mouseX = -1000;
+            mouseY = -1000;
+        } else {
+            $(document).mousemove(function (e) {
+                if (mouseX != e.pageX - 1000 && mouseY != e.pageY - 1000) {
+                    mouseX = e.pageX - 1000;
+                    mouseY = e.pageY - 1000;
+                    if (moving < 2950) {
+                        moving += 50;
+                    } else {
+                        moving = 3000;
+                    }
                 }
+            });
+            if (moving > 0) {
+                moving -= 20;
             }
-        });
-        if (moving > 0) {
-            moving -= 20;
         }
     }, 20);
 
     setInterval(function () {
-        xp += ((mouseX - xp) / 10);
-        yp += ((mouseY - yp) / 10);
-        $("#circle").css({left: xp + 'px', top: yp + 'px'});
+        if(window.innerHeight > window.innerWidth) {
+            xp = -1000;
+            yp = -1000;
+            $("#circle").css({left: '0px', top: '0px'});
+        } else {
+            xp += ((mouseX - xp) / 10);
+            yp += ((mouseY - yp) / 10);
+            $("#circle").css({left: xp + 'px', top: yp + 'px'});
+        }
     }, 20);
 
     setInterval(function() {
