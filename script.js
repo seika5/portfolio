@@ -3,6 +3,7 @@ const home = document.querySelector(".home");
 const projects = document.querySelector(".projects");
 const contact = document.querySelector(".contact");
 
+// Page scroll
 slide = (direction) => {
     let it_go;
     if (direction == "0") {

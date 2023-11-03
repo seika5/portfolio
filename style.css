@@ -76,8 +76,53 @@
 
 .content {
   margin-top: 50px;
-  margin-left: 30%;
-  margin-right: 30%;
   line-height: 2;
+}
+
+@media only screen and (orientation:portrait) {
+  #header {
+    height: 160px;
+  }
+
+  .lefthand li {
+    width: 300px;
+  }
+
+  .lefthand li a {
+    font-size: 48px !important;
+  }
+
+  #navbar li a {
+    transition: all 0s;
+  }
+
+  .righthand {
+    visibility: hidden;
+  }
+
+  .content {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .pages {
+    display: block;
+    width: 100%;
+  }
+
+  .page {
+    transform: none !important;
+  }
+}
+
+@media only screen and (orientation:landscape) {
+  .righthand {
+    visibility: visible;
+  }
+
+  .content {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }
 
