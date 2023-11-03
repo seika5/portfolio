@@ -104,7 +104,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -125,7 +125,6 @@ body {
 }
 
 .icon {
-  border-radius:50%;
   margin-right: 10px;
   height: 35px;
   width: 35px;
@@ -139,10 +138,14 @@ body {
 
 /* Buttons */
 
+.link {
+  border-radius: 50%;
+}
+
 .link:hover,
 .link:focus {
   animation: pulse 1s;
-  box-shadow: 0 0 0 10px transparent;
+  box-shadow: 0 0 0 8px transparent;
   content: url("media/icons/link.png");
 }
 
