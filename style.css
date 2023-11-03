@@ -1,8 +1,17 @@
+:root {
+  --primary-accent: #00b297;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+}
+
+body {
+  background: #f7fdfc;
+  overflow: hidden;
 }
 
 /* Header */
@@ -12,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: #d1d5e6;
+  background: #dcd7de;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
@@ -42,7 +51,7 @@
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: var(--primary-accent);
 }
 
 #navbar li a.active::after,
@@ -50,10 +59,21 @@
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--primary-accent);
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+/* Circle */
+
+.circle {
+  position: absolute;
+  background: radial-gradient(#e8fffa 10%, transparent 50%);
+  width: 2000px;
+  height: 2000px;
+  z-index: 0;
+  opacity: 0;
 }
 
 /* Content */
@@ -71,6 +91,7 @@
 
 .page {
   width: 100%;
+  z-index: 5;
   transition: all 1s;
 }
 
@@ -81,23 +102,63 @@
 
 .project {
   display: flex;
+  align-items: center;
   margin-top: 10px;
+  margin-bottom: 5px;
   width: 100%;
+}
+
+.project p {
+  display: block;
 }
 
 .info {
   display: flex;
+  padding-bottom: 10px;
   width: 100%;
 }
 
 .thumbnail {
   margin-right: 10px;
-  width: 200px;
+  width: 300px;
+  border: 3px solid var(--primary-accent);
+}
+
+.icon {
+  border-radius:50%;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.vl {
+  margin-right: 10px;
+  border-left: 3px solid var(--primary-accent);
+  height: 35px;
+}
+
+/* Buttons */
+
+.link:hover,
+.link:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 10px transparent;
+  content: url("media/icons/link.png");
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #1472ff;
+  }
 }
 
 /* Portrait */
 
 @media only screen and (orientation:portrait) {
+  body {
+    overflow-y: scroll;
+  }
+  
   #header {
     height: 160px;
   }
@@ -131,6 +192,10 @@
   .page {
     transform: none !important;
   }
+
+  .circle {
+    display: none;
+  }
 }
 
 /* Landscape */
@@ -141,8 +206,8 @@
   }
 
   .content {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
