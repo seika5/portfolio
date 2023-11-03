@@ -11,17 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 80px;
+  padding: 20px 80px;
   background: #d1d5e6;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
-}
-
-#header .logo img {
-  width: 40px;
 }
 
 #navbar{
@@ -58,4 +54,11 @@
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+/* Content */
+
+.content {
+  margin-top: 20px;
+  margin-left: 20%;
 }
