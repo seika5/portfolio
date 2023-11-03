@@ -10,28 +10,50 @@
 <body>
 	<section id="header">
 		<u1 id="navbar">
-			<li><a href="index.html">Ryan Mar</a></li>
+			<li><a onClick="slide('0')">Ryan Mar</a></li>
 		</u1>
 
 		<div>
 			<u1 id="navbar">
-				<li><a class="active" href="index.html">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a class="home active" onClick="slide('0')">Home</a></li>
+				<li><a class="projects" onClick="slide('1')">Projects</a></li>
+				<li><a class="contact" onClick="slide('2')">Contact</a></li>
 				<li><a href="media/resume.pdf">Download Resume</a></li>
 			</u1>
 		</div>
 	</section>
 
-	<div class="content">
-		<p>About Me</p>
-		<p>\\\</p>
-	</div>
+	<div class="container">
+		<div class="pages">
+			<div class="page">
+				<div class="content">
+					<h3>About Me</h3>
+					<p>My name is Ryan. I am a passionate computer science major with experience in full stack web development,
+						computer vision, and more. I enjoy making practical mini web applications, larger websites, and learning
+						about new technologies in the field of computer science.
+					</p>
+					<br>
+					<h3>Technical Skills</h3>
+					<p>\\\</p>
+				</div>
+			</div>
 
-	<div class="content">
-		<p>Technical Skills</p>
-		<p>\\\</p>
-	</div>
+			<div class="page">
+				<div class="content">
+					<h3>My Projects</h3>
+					<p>\\\</p>
+				</div>
+			</div>
 
+			<div class="page">
+				<div class="content">
+					<h3>Contact Me</h3>
+					<p>\\\</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
+<script src="script.js"></script>
 </html>
