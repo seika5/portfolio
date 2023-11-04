@@ -4,6 +4,7 @@ const projects = document.querySelector(".projects");
 const contact = document.querySelector(".contact");
 
 // Page scroll
+
 slide = (direction) => {
     let it_go;
     if (direction == "0") {
@@ -25,6 +26,8 @@ slide = (direction) => {
     pages.forEach(pages => (pages.style.transform = `translateX(${-it_go}%)`));
 }
 
+// Mouse circle
+
 jQuery(document).ready(function() {
 
     var mouseX = 0, mouseY = 0;
@@ -33,7 +36,6 @@ jQuery(document).ready(function() {
 
     setInterval(function() {
         if(window.innerHeight > window.innerWidth){
-            console.log("vert");
             mouseX = -1000;
             mouseY = -1000;
         } else {
@@ -73,5 +75,4 @@ jQuery(document).ready(function() {
             $("#circle").css({opacity: 1});
         }
     }, 20);
-
 });
