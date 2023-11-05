@@ -69,11 +69,39 @@ body {
 
 .circle {
   position: absolute;
-  background: radial-gradient(#e8fffa 10%, transparent 50%);
-  width: 2000px;
-  height: 2000px;
-  z-index: 0;
+  left: -200px;
+  background: radial-gradient(#13e1ff 10%, transparent 50%);
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  animation: blink 8s ease infinite;
+}
+
+.speech {
+  white-space: nowrap;
+  position: absolute;
+  left: -200px;
   opacity: 0;
+  z-index: 10;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Content */
@@ -197,6 +225,10 @@ body {
   }
 
   .circle {
+    display: none;
+  }
+
+  .speech {
     display: none;
   }
 }
