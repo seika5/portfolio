@@ -9,8 +9,8 @@ var bytechV = document.querySelector('.link-bytech-vercel');
 var wildeyeaiGH = document.querySelector('.link-wildeyeai-github');
 var yukaiGH = document.querySelector('.link-yukai-github');
 
-var speechTime = 0;
-var message = "";
+var speechTime = 5000;
+var message = "Hello! This is my portfolio.";
 
 // Page scroll
 
