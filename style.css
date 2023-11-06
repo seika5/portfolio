@@ -12,6 +12,7 @@
 body {
   background: #f7fdfc;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* Header */
@@ -186,10 +187,6 @@ body {
 /* Portrait */
 
 @media only screen and (orientation:portrait) {
-  body {
-    overflow-y: scroll;
-  }
-
   #header {
     height: 160px;
   }

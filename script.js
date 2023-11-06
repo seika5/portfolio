@@ -12,6 +12,8 @@ var yukaiGH = document.querySelector('.link-yukai-github');
 var speechTime = 5000;
 var message = "Hello! This is my portfolio.";
 
+var visitedProjects, hoveredIcon = false;
+
 // Page scroll
 
 slide = (direction) => {
@@ -29,6 +31,7 @@ slide = (direction) => {
 
         speechTime = 3000;
         message = "Here's a list of my projects!";
+        visitedProjects = true;
     } else if (direction == "2") {
         it_go = 200;
         home.classList.remove("active");
@@ -52,33 +55,55 @@ setInterval(function() {
 
     if (speechTime > 500) {
         document.querySelector('.speech').style.opacity = '1';
+    } else if (speechTime < 0) {
+        document.querySelector('.speech').style.opacity = '0';
     } else {
         document.querySelector('.speech').style.opacity =  (speechTime / 500);
     }
 
-    if (speechTime > 0) {
+    if (speechTime > -15000) {
         speechTime -= 20;
     }
 }, 20);
 
 setInterval(function () {
     if (github.matches(':hover')) {
-        speechTime = 3000;
+        speechTime = 2000;
         message = "This is the link to my GitHub!";
+        hoveredIcon = true;
     } else if (bytechGH.matches(':hover')) {
-        speechTime = 3000;
+        speechTime = 2000;
         message = "This is the ByTech GitHub repository!";
+        hoveredIcon = true;
     } else if (bytechV.matches(':hover')) {
-        speechTime = 3000;
+        speechTime = 2000;
         message = "This is the Vercel deployment of ByTech!";
+        hoveredIcon = true;
     } else if (wildeyeaiGH.matches(':hover')) {
-        speechTime = 3000;
+        speechTime = 2000;
         message = "This is the WildEyeAI GitHub repository!";
+        hoveredIcon = true;
     } else if (yukaiGH.matches(':hover')) {
-        speechTime = 3000;
+        speechTime = 2000;
         message = "This is the Yukai GitHub repository!";
+        hoveredIcon = true;
     }
 }, 20);
+
+setInterval(function() {
+    if (speechTime == -15000) {
+        var rand;
+        rand = Math.floor(Math.random() * 2);
+
+        if (rand == 0 && !visitedProjects) {
+            speechTime = 3000;
+            message = "Why not check out my projects?";
+        } else if (rand == 1 && !hoveredIcon) {
+            speechTime = 3000;
+            message = "Some icons are clickable links!";
+        }
+    }
+}, 100);
 
 // Mouse circle
 
