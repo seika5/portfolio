@@ -8,6 +8,9 @@ var bytechGH = document.querySelector('.link-bytech-github');
 var bytechV = document.querySelector('.link-bytech-vercel');
 var wildeyeaiGH = document.querySelector('.link-wildeyeai-github');
 var yukaiGH = document.querySelector('.link-yukai-github');
+var jamsterGH1 = document.querySelector('.link-jamster-github1');
+var jamsterGH2 = document.querySelector('.link-jamster-github2');
+var jamsterV = document.querySelector('.link-jamster-vercel');
 
 var speechTime = 5000;
 var message = "Hello! This is my portfolio.";
@@ -86,6 +89,18 @@ setInterval(function () {
     } else if (yukaiGH.matches(':hover')) {
         speechTime = 2000;
         message = "This is the Yukai GitHub repository!";
+        hoveredIcon = true;
+    } else if (jamsterGH1.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Jamster Extension GitHub repository!";
+        hoveredIcon = true;
+    } else if (jamsterGH2.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Jamster React App GitHub repository!";
+        hoveredIcon = true;
+    } else if (jamsterV.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Vercel deployment of Jamster!";
         hoveredIcon = true;
     }
 }, 20);
