@@ -4,6 +4,8 @@ const projects = document.querySelector(".projects");
 const contact = document.querySelector(".contact");
 
 var github = document.querySelector('.link-github');
+var croppydealsGH = document.querySelector('.link-croppydeals-github');
+var croppydealsV = document.querySelector('.link-croppydeals-vercel');
 var bytechGH = document.querySelector('.link-bytech-github');
 var bytechV = document.querySelector('.link-bytech-vercel');
 var wildeyeaiGH = document.querySelector('.link-wildeyeai-github');
@@ -73,6 +75,14 @@ setInterval(function () {
     if (github.matches(':hover')) {
         speechTime = 2000;
         message = "This is the link to my GitHub!";
+        hoveredIcon = true;
+    } else if (croppydealsGH.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Croppy Deals GitHub repository!";
+        hoveredIcon = true;
+    } else if (croppydealsV.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Vercel deployment of Croppy Deals!";
         hoveredIcon = true;
     } else if (bytechGH.matches(':hover')) {
         speechTime = 2000;
