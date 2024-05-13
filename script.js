@@ -27,6 +27,7 @@ slide = (direction) => {
         home.classList.add("active");
         projects.classList.remove("active");
         contact.classList.remove("active");
+        window.scrollTo(0, 0);
     } else if (direction == "1") {
         it_go = 100;
         home.classList.remove("active");
@@ -36,6 +37,7 @@ slide = (direction) => {
         speechTime = 3000;
         message = "Here's a list of my projects!";
         visitedProjects = true;
+        window.scrollTo(0, 0);
     } else if (direction == "2") {
         it_go = 200;
         home.classList.remove("active");
@@ -44,6 +46,7 @@ slide = (direction) => {
 
         speechTime = 3000;
         message = "Here's how you can contact me!";
+        window.scrollTo(0, 0);
     }
     pages.forEach(pages => (pages.style.transform = `translateX(${-it_go}%)`));
 }
@@ -154,7 +157,7 @@ jQuery(document).ready(function() {
                     }
                 }
 
-                if (e.pageY < window.innerHeight / 5) {
+                if (e.clientY < window.innerHeight / 5) {
                     if (mouseY != e.pageY + 50) {
                         mouseY = e.pageY + 50;
                         smouseY = e.pageY + 150;
