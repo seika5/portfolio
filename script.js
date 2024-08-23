@@ -9,6 +9,7 @@ var croppydealsV = document.querySelector('.link-croppydeals-vercel');
 var bytechGH = document.querySelector('.link-bytech-github');
 var bytechV = document.querySelector('.link-bytech-vercel');
 var wildeyeaiGH = document.querySelector('.link-wildeyeai-github');
+var yukaiGH = document.querySelector('.link-yukai-github');
 var jamsterGH1 = document.querySelector('.link-jamster-github1');
 var jamsterGH2 = document.querySelector('.link-jamster-github2');
 var jamsterV = document.querySelector('.link-jamster-vercel');
@@ -97,6 +98,10 @@ setInterval(function () {
     } else if (wildeyeaiGH.matches(':hover')) {
         speechTime = 2000;
         message = "This is the WildEyeAI GitHub repository!";
+        hoveredIcon = true;
+    } else if (yukaiGH.matches(':hover')) {
+        speechTime = 2000;
+        message = "This is the Yukai GitHub repository!";
         hoveredIcon = true;
     } else if (jamsterGH1.matches(':hover')) {
         speechTime = 2000;
