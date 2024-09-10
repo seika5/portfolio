@@ -2,4 +2,4 @@
 
 My portfolio website.
 
-Deployed at: https://seika5.github.io
+Deployed at: https://www.ryanmar.co
