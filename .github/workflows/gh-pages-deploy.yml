@@ -25,13 +25,11 @@ jobs:
         working-directory: portfolio
 
       - name: Build the React app
-        run: |
-          export NODE_OPTIONS=--openssl-legacy-provider
-          npm run build
+        run: npm run build
         working-directory: portfolio
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4  # Update to the latest version
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: portfolio/build
