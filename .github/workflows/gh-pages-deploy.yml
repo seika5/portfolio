@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger the workflow on push or merge to the main branch
 
 jobs:
   deploy:
@@ -25,9 +25,6 @@ jobs:
       - name: Build the React app
         run: npm run build
         working-directory: portfolio
-
-      - name: List directory contents for debugging
-        run: ls -R portfolio
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
