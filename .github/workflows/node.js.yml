@@ -22,6 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: portfolio/package-lock.json
     - run: cd portfolio && npm ci
     - run: cd portfolio && npm run build --if-present
     - run: cd portfolio && npm test
