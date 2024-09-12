@@ -38,11 +38,11 @@ const HeroSection = () => {
   }, []);
 
   const backgroundPosition = {
-    backgroundPosition: `${mousePosition.x / 50}px ${mousePosition.y / 50}px`,
+    backgroundPosition: `${-mousePosition.x / 50}px ${-mousePosition.y / 50}px`,
   };
 
   // const foregroundPosition = {
-  //   backgroundPosition: `${-mousePosition.x / 50}px ${-mousePosition.y / 50}px`,
+  //   backgroundPosition: `${mousePosition.x / 50}px ${mousePosition.y / 50}px`,
   // };
 
   return (
