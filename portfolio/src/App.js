@@ -116,11 +116,30 @@ const ProjectsSection = () => (
   <Section id="projects" title="Projects" className="bg-white text-gray-800">
     <div className="max-w-4xl mx-auto">
       <ProjectCard 
+        title="DjN Data Visualizer" 
+        description="Experimental data visualizer using Next.js for frontend and Django REST Framework for API backend. Features dashboard with 4 data visualizations using data from backend. Utilizes Docker for easy deployment." 
+        imgUrl="/djndatavisualizer.png" 
+        repoUrls={["https://github.com/seika5/api-data-visualizer"]}
+      />
+      <ProjectCard 
         title="Croppy Deals" 
         description="Digital marketplace that provides farmers with both an alternative to contract farming and easily accessible market data to assist with determining future crop rotations." 
         imgUrl="/croppydeals.png" 
         repoUrls={["https://github.com/airhornwho/croppydeals"]}
         deployUrl="https://croppydeals-alpha.vercel.app"
+      />
+      <ProjectCard 
+        title="Jamster" 
+        description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song." 
+        imgUrl="/jamster.png" 
+        repoUrls={["https://github.com/seika5/jamster", "https://github.com/seika5/jamster-react-app"]}
+        deployUrl="https://jamster.vercel.app"
+      />
+      <ProjectCard 
+        title="Yukai" 
+        description="Modern online merchandise store. Uses a Django framework to handle user accounts, a mailing system, and more. Uses Stripe for secure online payment handling." 
+        imgUrl="/yukai.png" 
+        repoUrls={["https://github.com/seika5/shirtmarket"]}
       />
       <ProjectCard 
         title="ByTech" 
@@ -134,25 +153,6 @@ const ProjectsSection = () => (
         description="AI-based wildlife protection. Uses image subtraction techniques to identify movement, then runs frames with movement through an image classification model. Collected data is then sent via POST request to a FLASK server. As it can be run on small installations, WildEyeAI provides a non-intrusive method of wildlife data collection." 
         imgUrl="/wildeyeai.png" 
         repoUrls={["https://github.com/seika5/deepimageclassifier"]}
-      />
-      <ProjectCard 
-        title="Yukai" 
-        description="Modern online merchandise store. Uses a Django framework to handle user accounts, a mailing system, and more. Uses Stripe for secure online payment handling." 
-        imgUrl="/yukai.png" 
-        repoUrls={["https://github.com/seika5/shirtmarket"]}
-      />
-      <ProjectCard 
-        title="Jamster" 
-        description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song." 
-        imgUrl="/jamster.png" 
-        repoUrls={["https://github.com/seika5/jamster", "https://github.com/seika5/jamster-react-app"]}
-        deployUrl="https://jamster.vercel.app"
-      />
-      <ProjectCard 
-        title="DjN Data Visualizer" 
-        description="Experimental data visualizer using Next.js for frontend and Django REST Framework for API backend. Features dashboard with 4 data visualizations using data from backend. Utilizes Docker for easy deployment." 
-        imgUrl="/djndatavisualizer.png" 
-        repoUrls={["https://github.com/seika5/api-data-visualizer"]}
       />
     </div>
   </Section>
