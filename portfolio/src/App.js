@@ -148,6 +148,12 @@ const ProjectsSection = () => (
         repoUrls={["https://github.com/seika5/jamster", "https://github.com/seika5/jamster-react-app"]}
         deployUrl="https://jamster.vercel.app"
       />
+      <ProjectCard 
+        title="DjN Data Visualizer" 
+        description="Experimental data visualizer using Next.js for frontend and Django REST Framework for API backend. Features dashboard with 4 data visualizations using data from backend. Utilizes Docker for easy deployment." 
+        imgUrl="/djndatavisualizer.png" 
+        repoUrls={["https://github.com/seika5/api-data-visualizer"]}
+      />
     </div>
   </Section>
 );
