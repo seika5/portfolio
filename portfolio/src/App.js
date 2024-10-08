@@ -169,7 +169,7 @@ const ContactSection = () => (
 // Footer component
 const Footer = () => (
   <footer className="flex justify-center items-center p-6 bg-gray-800 text-white">
-    <a href="/resume.pdf" className="flex items-center text-white hover:underline">
+    <a href="/Ryan_Mar_resume.pdf" className="flex items-center text-white hover:underline">
       <FaFileDownload className="mr-2" /> Download Resume
     </a>
   </footer>
