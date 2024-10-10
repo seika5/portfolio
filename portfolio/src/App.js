@@ -136,17 +136,17 @@ const ProjectsSection = () => (
         deployUrl="https://jamster.vercel.app"
       />
       <ProjectCard 
-        title="Yukai" 
-        description="Modern online merchandise store. Uses a Django framework to handle user accounts, a mailing system, and more. Uses Stripe for secure online payment handling." 
-        imgUrl="/yukai.png" 
-        repoUrls={["https://github.com/seika5/shirtmarket"]}
-      />
-      <ProjectCard 
         title="ByTech" 
         description="Educational tool for computer science classes. Seamlessly integrating familiar features of learning management systems, ByTech offers personalized assignment creation assistance for teachers and comprehensive assignment explanations for students. Provides a web-based development environment as well as unit test functionalities." 
         imgUrl="/bytech.png" 
         repoUrls={["https://github.com/Teddygat0r/dualhacks"]}
         deployUrl="https://dualhacks.vercel.app"
+      />
+      <ProjectCard 
+        title="Yukai" 
+        description="Modern online merchandise store. Uses a Django framework to handle user accounts, a mailing system, and more. Uses Stripe for secure online payment handling." 
+        imgUrl="/yukai.png" 
+        repoUrls={["https://github.com/seika5/shirtmarket"]}
       />
       <ProjectCard 
         title="WildEyeAI" 
