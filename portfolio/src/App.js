@@ -116,6 +116,12 @@ const ProjectsSection = () => (
   <Section id="projects" title="Projects" className="bg-white text-gray-800">
     <div className="max-w-4xl mx-auto">
       <ProjectCard 
+        title="MooGuard" 
+        description="Digital livestock tagging, tracking, and health monitoring. Uses Tensor Processing Unit to deploy on-site at a low upfront and continuing cost." 
+        imgUrl="/mooguard.png" 
+        repoUrls={["https://github.com/airwuu/www"]}
+      />
+      <ProjectCard 
         title="DjN Data Visualizer" 
         description="Experimental data visualizer using Next.js for frontend and Django REST Framework for API backend. Features dashboard with 4 data visualizations using data from backend. Utilizes Docker for easy deployment." 
         imgUrl="/djndatavisualizer.png" 
