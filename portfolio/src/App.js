@@ -117,7 +117,7 @@ const ProjectsSection = () => (
     <div className="max-w-4xl mx-auto">
       <ProjectCard 
         title="MooGuard" 
-        description="Digital livestock tagging, tracking, and health monitoring. Uses Tensor Processing Unit to deploy on-site at a low upfront and continuing cost." 
+        description="HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses Tensor Processing Unit to deploy on-site at a low upfront and continuing cost." 
         imgUrl="/mooguard.png" 
         repoUrls={["https://github.com/airwuu/www"]}
       />
@@ -129,7 +129,7 @@ const ProjectsSection = () => (
       />
       <ProjectCard 
         title="Croppy Deals" 
-        description="Digital marketplace that provides farmers with both an alternative to contract farming and easily accessible market data to assist with determining future crop rotations." 
+        description="HackMerced IX 2nd place. Digital marketplace that provides farmers with both an alternative to contract farming and easily accessible market data to assist with determining future crop rotations." 
         imgUrl="/croppydeals.png" 
         repoUrls={["https://github.com/airhornwho/croppydeals"]}
         deployUrl="https://croppydeals-alpha.vercel.app"
