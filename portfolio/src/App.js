@@ -119,7 +119,7 @@ const ProjectsSection = () => (
         title="MooGuard" 
         description="HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses Tensor Processing Unit to deploy on-site at a low upfront and continuing cost." 
         imgUrl="/mooguard.png" 
-        repoUrls={["https://github.com/airwuu/www"]}
+        repoUrls={["https://github.com/airwuu/MooGuard"]}
       />
       <ProjectCard 
         title="DjN Data Visualizer" 
