@@ -30,11 +30,10 @@ jobs:
     - name: Install dependencies
       run: cd portfolio && npm install --legacy-peer-deps
     
-    - name: Build and Export
+    - name: Build
       run: |
         cd portfolio
         npm run build
-        npm run export
       
     - name: Setup custom domain
       run: |
@@ -44,6 +43,7 @@ jobs:
     - name: Deploy with gh-pages
       run: |
         cd portfolio && git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

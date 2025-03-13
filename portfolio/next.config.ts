@@ -1,10 +1,13 @@
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  output: 'export',
   reactStrictMode: true,
   images: {
-    domains: ['ryanmar.co'],
+    unoptimized: true,
   },
+  basePath: '',
+  trailingSlash: true,
 };
 
 export default nextConfig;
