@@ -29,12 +29,12 @@ jobs:
       
     - name: Setup custom domain
       run: |
-        cd portfolio/build
+        cd portfolio
         echo "ryanmar.co" > CNAME
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
-        folder: portfolio/build
+        folder: portfolio
         clean: true
