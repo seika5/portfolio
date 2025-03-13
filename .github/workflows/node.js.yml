@@ -26,11 +26,6 @@ jobs:
     
     - name: Build
       run: cd portfolio && npm run build
-      
-    - name: Setup custom domain
-      run: |
-        cd portfolio/build # or dist or out, depending on your build output folder
-        echo "ryanmar.co" > CNAME
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
