@@ -1,34 +1,40 @@
-name: Node.js CI
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [22.x]
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 18.x
         cache: 'npm'
         cache-dependency-path: portfolio/package-lock.json
-    - run: cd portfolio && npm install --legacy-peer-deps
-    - run: cd portfolio && npm run build --if-present
-
-    - name: Deploy with gh-pages
+    
+    - name: Install dependencies
+      run: cd portfolio && npm install --legacy-peer-deps
+    
+    - name: Build
+      run: cd portfolio && npm run build
+      
+    - name: Setup custom domain
       run: |
-        cd portfolio && git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        cd portfolio/build # or dist or out, depending on your build output folder
+        echo "ryanmar.co" > CNAME
+    
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: portfolio/build
+        clean: true
