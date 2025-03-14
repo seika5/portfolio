@@ -2,11 +2,12 @@ import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  reactStrictMode: true,
+  distDir: 'out',
+  basePath: '',
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
-};
+}
 
 export default nextConfig;
