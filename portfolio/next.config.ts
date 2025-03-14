@@ -4,9 +4,10 @@ const nextConfig: NextConfig = {
   output: 'export',
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: true, 
   },
-  basePath: '',
+  basePath: '/portfolio', 
+  assetPrefix: '/portfolio/', 
   trailingSlash: true,
 };
 
