@@ -24,7 +24,7 @@ jobs:
         cache-dependency-path: portfolio/package-lock.json
         
     - name: Install dependencies
-      run: cd portfolio && npm install
+      run: cd portfolio && npm install --legacy-peer-deps
       
     - name: Install gh-pages
       run: cd portfolio && npm install gh-pages --save-dev
