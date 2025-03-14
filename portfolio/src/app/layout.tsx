@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ryan Mar | SWE",
-  description: "Portfolio of Ryan Mar, a software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
+  description: "Ryan Mar—software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
   keywords: ["software engineer", "portfolio", "full-stack developer", "AI engineer", "web development", "cloud solutions"],
-  authors: [{ name: "Alex Morgan" }],
+  authors: [{ name: "Ryan Mar" }],
   openGraph: {
     title: "Ryan Mar | SWE",
-    description: "Portfolio of Ryan Mar, a software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
+    description: "Ryan Mar—software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
     images: [
       {
         url: "/meta.png",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ryan Mar | Software Engineer",
-    description: "Portfolio of Ryan Mar, a software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
+    description: "Ryan Mar—software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
     images: ["/meta.png"],
   },
   icons: {
