@@ -63,6 +63,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <ClientBody>
         {children}
+        <Analytics/>
       </ClientBody>
     </html>
   );
