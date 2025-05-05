@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ryan Mar | SWE",
   description: "Ryan Mar—software engineer experienced in full-stack development, artificial intelligence, cloud solutions, and more.",
-  keywords: ["software engineer", "portfolio", "full-stack developer", "AI engineer", "web development", "cloud solutions"],
+  keywords: ["software engineer", "portfolio", "full stack developer", "web development", "cloud solutions"],
   authors: [{ name: "Ryan Mar" }],
   openGraph: {
     title: "Ryan Mar | SWE",

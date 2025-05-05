@@ -39,8 +39,8 @@ export default function PortfolioContent() {
   return (
     <div className="flex min-h-screen text-white">
       <nav className="hidden lg:flex flex-col items-center w-24 bg-black/60 border-r border-white/10 fixed h-screen z-40">
-        <div className="font-mono text-xl mt-16 mb-12 rotate-90 tracking-wider">
-          PORTFOLIO
+        <div className="font-mono text-xl mt-16 mb-12 rotate-90 tracking-wider whitespace-nowrap">
+          RYAN MAR
         </div>
 
         <div className="flex flex-col gap-10 items-center mt-8">
@@ -117,7 +117,7 @@ export default function PortfolioContent() {
       </div>
 
       <main className="w-full lg:pl-24">
-        <section id="home" className="min-h-screen flex flex-col justify-center px-8 lg:px-16 py-32">
+        <section id="home" className="flex flex-col justify-center px-8 lg:px-16 py-32">
           <div className="max-w-3xl mx-auto w-full">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
               <p className="text-[#d4af37] mb-4 font-mono">Hello, my name is</p>
@@ -125,19 +125,13 @@ export default function PortfolioContent() {
                 Ryan Mar
               </h1>
               <h2 className="text-2xl md:text-4xl lg:text-5xl text-white/70 font-semibold mb-6">
-                Software Engineer & Computer Science Major
+                Computer Science Major & Software Engineer
               </h2>
               <p className="text-white/70 max-w-xl mb-8 text-lg">
-                I'm a passionate Computer Science major with experience in full stack web development,
-                machine learning, and more. I enjoy making fun/practical applications.
+                I'm a passionate developer with experience in full stack web development,
+                cloud technologies, machine learning, and more. I enjoy building practical and novel applications.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button
-                  onClick={() => scrollToSection('projects')}
-                  className="bg-[#d4af37]/90 hover:bg-[#d4af37] text-black px-6 py-3 rounded-md font-medium transition-colors"
-                >
-                  View My Work
-                </button>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 px-6 py-3 rounded-md font-medium transition-colors"
@@ -149,7 +143,7 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="about" className="min-h-screen py-32 px-8 lg:px-16">
+        <section id="about" className="py-32 px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
@@ -159,18 +153,17 @@ export default function PortfolioContent() {
               <div className="grid md:grid-cols-5 gap-8">
                 <div className="md:col-span-3">
                   <p className="text-white/80 mb-4">
-                    I'm a passionate Computer Science major with experience in full stack web development,
-                    machine learning, and more. I enjoy making fun/practical applications and challenging
-                    myself to learn about new technologies in the field of Computer Science.
+                    I enjoy designing scalable backend systems, working with databases, and building cloud-native
+                    architecture and infrastructure on platforms like AWS.
                   </p>
                   <p className="text-white/80 mb-4">
-                    My projects range from computer vision agriculture solutions to educational tools for
-                    computer science classes. I'm passionate about using technology to solve real-world problems
-                    and create innovative applications.
+                    My projects range from computer vision agriculture solutions to feature-complete e-commerce 
+                    sites. I'm passionate about using technology to solve real-world problems and create innovative 
+                    applications.
                   </p>
                   <p className="text-white/80 mb-6">
-                    When I'm not coding, you can find me exploring new technologies, participating in hackathons,
-                    and collaborating on open-source projects.
+                    When I'm not in class, you'll find me prototyping side projects, trying out new frameworks, 
+                    and getting boba with friends.
                   </p>
 
                   <div className="grid grid-cols-2 gap-4 text-white/80">
@@ -201,7 +194,7 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="skills" className="min-h-screen py-32 px-8 lg:px-16">
+        <section id="skills" className="py-32 px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
@@ -219,29 +212,29 @@ export default function PortfolioContent() {
                 ]} />
 
                 <SkillCategory title="Backend Development" skills={[
-                  "AWS",
+                  "AWS (EC2, Lambda, RDS)",
                   "Django REST Framework",
                   "Firebase",
-                  "Flask",
-                  "Python",
-                  "REST APIs"
+                  "MongoDB",
+                  "REST APIs",
+                  "SQL (MySQL, SQLite)"
                 ]} />
 
                 <SkillCategory title="AI & Machine Learning" skills={[
                   "Computer Vision",
-                  "Data Analysis",
                   "Image Classification",
                   "Natural Language Processing",
-                  "TensorFlow",
-                  "Tensor Processing"
+                  "OpenCV",
+                  "PyTorch",
+                  "TensorFlow"
                 ]} />
 
-                <SkillCategory title="DevOps & Tools" skills={[
-                  "Browser Extensions",
+                <SkillCategory title="Miscellaneous" skills={[
+                  "Bash Scripting",
                   "Docker",
                   "Git",
-                  "GitHub",
-                  "Stripe Integration",
+                  "Jira",
+                  "Stripe",
                   "Vercel"
                 ]} />
               </div>
@@ -249,7 +242,7 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="projects" className="min-h-screen py-32 px-8 lg:px-16">
+        <section id="projects" className="py-32 px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
@@ -259,7 +252,7 @@ export default function PortfolioContent() {
               <div className="space-y-16">
                 <ProjectCard
                   title="MooGuard"
-                  description="HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses Tensor Processing Unit to deploy on-site at a low upfront and continuing cost."
+                  description="HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses tensor processing units to deploy on-site at a low upfront and continuing cost."
                   tags={["TensorFlow", "AI", "IoT", "Livestock Monitoring"]}
                   imageUrl="/mooguard.png"
                   githubUrl="https://github.com/airwuu/MooGuard"
@@ -269,7 +262,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="DjN Data Visualizer"
-                  description="Experimental data visualizer using Next.js for frontend and Django REST Framework for API backend. Features dashboard with 4 data visualizations using data from backend."
+                  description="Sandbox project using Next.js for frontend and Django REST Framework for backend API to visualize data. Containerized using Docker for easy deployment of full stack application."
                   tags={["Next.js", "Django", "REST API", "Data Visualization", "Docker"]}
                   imageUrl="/djndatavisualizer.png"
                   githubUrl="https://github.com/seika5/api-data-visualizer"
@@ -279,7 +272,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="Croppy Deals"
-                  description="HackMerced IX 2nd place. Digital marketplace that provides farmers with both an alternative to contract farming and easily accessible market data to assist with determining future crop rotations."
+                  description="HackMerced IX 2nd place. Digital marketplace providing farmers with an alternative to contract farming and an easily accessible market data visualizer."
                   tags={["React", "Digital Marketplace", "Agriculture", "Data Analysis"]}
                   imageUrl="/croppydeals.png"
                   githubUrl="https://github.com/airhornwho/croppydeals"
@@ -289,7 +282,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="Jamster"
-                  description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song."
+                  description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song for your friends."
                   tags={["React", "Firebase", "Browser Extension", "YouTube API"]}
                   imageUrl="/jamster.png"
                   githubUrl="https://github.com/seika5/jamster"
@@ -299,7 +292,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="Yukai"
-                  description="Modern online merchandise store. Uses a Django framework to handle user accounts, a mailing system, and more. Uses Stripe for secure online payment handling."
+                  description="Modern online merchandise store. Uses a full stack Django framework to handle user accounts, mailing system, purchases, and more. Uses Stripe for secure online payment handling."
                   tags={["Django", "Stripe", "E-commerce", "Python"]}
                   imageUrl="/yukai.png"
                   githubUrl="https://github.com/seika5/shirtmarket"
@@ -309,7 +302,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="ByTech"
-                  description="Educational tool for computer science classes. Seamlessly integrating familiar features of learning management systems, ByTech offers personalized assignment creation assistance for teachers and comprehensive assignment explanations for students."
+                  description="Educational tool for computer science classes. Offers personalized assignment creation assistance for teachers and comprehensive assignment explanations for students."
                   tags={["Web-based IDE", "LMS", "Education", "Computer Science"]}
                   imageUrl="/bytech.png"
                   githubUrl="https://github.com/Teddygat0r/dualhacks"
@@ -319,7 +312,7 @@ export default function PortfolioContent() {
 
                 <ProjectCard
                   title="WildEyeAI"
-                  description="AI-based wildlife protection. Uses image subtraction techniques to identify movement, then runs frames with movement through an image classification model. Collected data is then sent via POST request to a FLASK server."
+                  description="AI-based wildlife protection. Low-cost image classification model for wildlife conservation and data collection."
                   tags={["Computer Vision", "AI", "Wildlife Conservation", "Python"]}
                   imageUrl="/wildeyeai.png"
                   githubUrl="https://github.com/seika5/deepimageclassifier"
@@ -331,7 +324,7 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="contact" className="min-h-screen py-32 px-8 lg:px-16">
+        <section id="contact" className="py-32 px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
