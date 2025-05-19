@@ -170,7 +170,7 @@ export default function PortfolioContent() {
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Education</h3>
                       <p className="mb-1">B.S. in Computer Science</p>
-                      <p className="text-sm text-white/60">University of California, Merced</p>
+                      <p className="text-sm text-white/60">University of California, San Diego</p>
                     </div>
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Experience</h3>
