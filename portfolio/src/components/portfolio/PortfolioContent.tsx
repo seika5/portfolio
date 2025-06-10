@@ -285,7 +285,7 @@ export default function PortfolioContent() {
                   description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song for your friends."
                   tags={["React", "Firebase", "Browser Extension", "YouTube API"]}
                   imageUrl="/jamster.png"
-                  githubUrl="https://github.com/seika5/jamster"
+                  githubUrl="https://github.com/seika5/jamster-react-app"
                   liveUrl="https://jamster.vercel.app"
                   reverse={true}
                 />
