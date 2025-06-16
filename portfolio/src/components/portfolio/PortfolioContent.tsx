@@ -166,16 +166,16 @@ export default function PortfolioContent() {
                     and getting boba with friends.
                   </p>
 
-                  <div className="grid grid-cols-2 gap-4 text-white/80">
+                  <div className="grid grid-cols-1 gap-4 text-white/80">
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Education</h3>
-                      <p className="mb-1">B.S. in Computer Science</p>
-                      <p className="text-sm text-white/60">University of Southern California</p>
+                      <p className="mb-1">University of Southern California</p>
+                      <p className="text-sm text-white/60">B.S. in Computer Science</p>
                     </div>
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Experience</h3>
-                      <p className="mb-1">Software Engineer</p>
-                      <p className="text-sm text-white/60">Various Projects & Internships</p>
+                      <p className="mb-1">U.S. Department of Homeland Security</p>
+                      <p className="text-sm text-white/60">Software Engineer Intern</p>
                     </div>
                   </div>
                 </div>
