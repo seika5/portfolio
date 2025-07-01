@@ -153,12 +153,12 @@ export default function PortfolioContent() {
               <div className="grid md:grid-cols-5 gap-8">
                 <div className="md:col-span-3">
                   <p className="text-white/80 mb-4">
-                    I enjoy designing scalable backend systems, working with databases, and building cloud-native
+                    I enjoy designing scalable distributed systems, creating AI pipelines, and building cloud-native
                     architecture and infrastructure on platforms like AWS.
                   </p>
                   <p className="text-white/80 mb-4">
-                    My projects range from computer vision agriculture solutions to feature-complete e-commerce 
-                    sites. I'm passionate about using technology to solve real-world problems and create innovative 
+                    My projects range from feature-complete e-commerce sites to distributed machine learning model
+                    training. I'm passionate about using technology to solve real-world problems and create innovative 
                     applications.
                   </p>
                   <p className="text-white/80 mb-6">
@@ -174,6 +174,8 @@ export default function PortfolioContent() {
                     </div>
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Experience</h3>
+                      <p className="mb-1">Docflow Labs</p>
+                      <p className="text-sm text-white/60 mb-2">Software Engineer Intern</p>
                       <p className="mb-1">U.S. Department of Homeland Security</p>
                       <p className="text-sm text-white/60">Software Engineer Intern</p>
                     </div>
@@ -251,32 +253,12 @@ export default function PortfolioContent() {
 
               <div className="space-y-16">
                 <ProjectCard
-                  title="MooGuard"
-                  description="HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses tensor processing units to deploy on-site at a low upfront and continuing cost."
-                  tags={["TensorFlow", "AI", "IoT", "Livestock Monitoring"]}
-                  imageUrl="/mooguard.png"
-                  githubUrl="https://github.com/airwuu/MooGuard"
-                  liveUrl=""
-                  reverse={false}
-                />
-
-                <ProjectCard
-                  title="DjN Data Visualizer"
-                  description="Sandbox project using Next.js for frontend and Django REST Framework for backend API to visualize data. Containerized using Docker for easy deployment of full stack application."
-                  tags={["Next.js", "Django", "REST API", "Data Visualization", "Docker"]}
-                  imageUrl="/djndatavisualizer.png"
-                  githubUrl="https://github.com/seika5/api-data-visualizer"
-                  liveUrl=""
-                  reverse={true}
-                />
-
-                <ProjectCard
-                  title="Croppy Deals"
-                  description="HackMerced IX 2nd place. Digital marketplace providing farmers with an alternative to contract farming and an easily accessible market data visualizer."
-                  tags={["React", "Digital Marketplace", "Agriculture", "Data Analysis"]}
-                  imageUrl="/croppydeals.png"
-                  githubUrl="https://github.com/airhornwho/croppydeals"
-                  liveUrl="https://croppydeals-alpha.vercel.app"
+                  title="TH TicTacToe"
+                  description="Take-home project. Fully functional online Tic Tac Toe website built in 2 hours. Utilizes Google Firebase Cloud Firestore snapshot listeners to efficiently communicate data in real time."
+                  tags={["React", "Firebase", "Browser Extension", "YouTube API"]}
+                  imageUrl="/thttt.png"
+                  githubUrl="https://github.com/seika5/th-ttt"
+                  liveUrl="https://th-ttt.vercel.app"
                   reverse={false}
                 />
 
@@ -291,13 +273,43 @@ export default function PortfolioContent() {
                 />
 
                 <ProjectCard
+                  title="MooGuard"
+                  description="Hackathon project, HackMerced X 1st place. Digital livestock tagging, tracking, and health monitoring. Uses tensor processing units to deploy on-site at a low upfront and continuing cost."
+                  tags={["TensorFlow", "AI", "IoT", "Livestock Monitoring"]}
+                  imageUrl="/mooguard.png"
+                  githubUrl="https://github.com/airwuu/MooGuard"
+                  liveUrl=""
+                  reverse={false}
+                />
+
+                <ProjectCard
+                  title="DjN Data Visualizer"
+                  description="Take-home project. Sandbox project using Next.js for frontend and Django REST Framework for backend API to visualize data. Containerized using Docker for easy deployment of full stack application."
+                  tags={["Next.js", "Django", "REST API", "Data Visualization", "Docker"]}
+                  imageUrl="/djndatavisualizer.png"
+                  githubUrl="https://github.com/seika5/api-data-visualizer"
+                  liveUrl=""
+                  reverse={true}
+                />
+
+                <ProjectCard
+                  title="Croppy Deals"
+                  description="Hackathon project, HackMerced IX 2nd place. Digital marketplace providing farmers with an alternative to contract farming and an easily accessible market data visualizer."
+                  tags={["React", "Digital Marketplace", "Agriculture", "Data Analysis"]}
+                  imageUrl="/croppydeals.png"
+                  githubUrl="https://github.com/airhornwho/croppydeals"
+                  liveUrl="https://croppydeals-alpha.vercel.app"
+                  reverse={false}
+                />
+
+                <ProjectCard
                   title="Yukai"
                   description="Modern online merchandise store. Uses a full stack Django framework to handle user accounts, mailing system, purchases, and more. Uses Stripe for secure online payment handling."
                   tags={["Django", "Stripe", "E-commerce", "Python"]}
                   imageUrl="/yukai.png"
                   githubUrl="https://github.com/seika5/shirtmarket"
                   liveUrl=""
-                  reverse={false}
+                  reverse={true}
                 />
 
                 <ProjectCard
@@ -307,7 +319,7 @@ export default function PortfolioContent() {
                   imageUrl="/bytech.png"
                   githubUrl="https://github.com/Teddygat0r/dualhacks"
                   liveUrl="https://dualhacks.vercel.app"
-                  reverse={true}
+                  reverse={false}
                 />
 
                 <ProjectCard
@@ -317,7 +329,7 @@ export default function PortfolioContent() {
                   imageUrl="/wildeyeai.png"
                   githubUrl="https://github.com/seika5/deepimageclassifier"
                   liveUrl=""
-                  reverse={false}
+                  reverse={true}
                 />
               </div>
             </div>
