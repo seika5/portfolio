@@ -180,9 +180,11 @@ export default function PortfolioContent() {
                       <p className="text-sm text-white/60">B.S. in Computer Science</p>
                     </div>
                     <div>
-                      <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Experience</h3>
+                      <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Work Experience</h3>
+
                       <p className="mb-1">Docflow Labs</p>
                       <p className="text-sm text-white/60 mb-2">Software Engineer Intern</p>
+
                       <p className="mb-1">U.S. Department of Homeland Security</p>
                       <p className="text-sm text-white/60">Software Engineer Intern</p>
                     </div>
