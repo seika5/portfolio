@@ -124,12 +124,12 @@ export default function PortfolioContent() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
                 Ryan Mar
               </h1>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl text-white/70 font-semibold mb-6">
-                Computer Science Major @ University of Southern California
+              <h2 className="text-base md:text-xl lg:text-2xl text-white/70 font-semibold mb-6">
+                Computer Science @ University of Southern California
               </h2>
               <p className="text-white/70 max-w-xl mb-8 text-lg">
-                I'm a passionate developer with experience in full stack web development,
-                cloud technologies, machine learning, and more. I enjoy building practical and novel applications.
+                I'm a passionate developer with experience in full stack development, cloud technologies, 
+                machine learning, and more. I enjoy building practical and novel applications.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button
