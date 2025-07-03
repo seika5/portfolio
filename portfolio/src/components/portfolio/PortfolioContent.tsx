@@ -138,13 +138,15 @@ export default function PortfolioContent() {
                 >
                   Get in Touch
                 </button>
+
                 <a
                   href="/Ryan_Mar_resume.pdf"
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 px-6 py-3 rounded-md font-medium transition-colors flex items-center gap-2"
                 >
                   <FileText size={20} />
-                  Download Resume
+                  See My Resume
                 </a>
               </div>
             </div>
@@ -212,40 +214,44 @@ export default function PortfolioContent() {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <SkillCategory title="Frontend Development" skills={[
-                  "Django",
-                  "HTML/CSS",
+                <SkillCategory title="Languages" skills={[
+                  "C/C++",
+                  "Java",
+                  "Python",
                   "JavaScript",
-                  "Next.js",
+                  "TypeScript",
+                  "SQL",
+                  "HTML + CSS"
+                ]} />
+
+                <SkillCategory title="Frameworks" skills={[
                   "React",
-                  "TypeScript"
+                  "Next.js",
+                  "Vue.js",
+                  "Django",
+                  "Node.js",
+                  "Express",
+                  "Spring.js"
                 ]} />
 
-                <SkillCategory title="Backend Development" skills={[
-                  "AWS (EC2, Lambda, RDS)",
-                  "Django REST Framework",
-                  "Firebase",
-                  "MongoDB",
-                  "REST APIs",
-                  "SQL (MySQL, SQLite)"
-                ]} />
-
-                <SkillCategory title="AI & Machine Learning" skills={[
-                  "Computer Vision",
-                  "Image Classification",
-                  "Natural Language Processing",
-                  "OpenCV",
+                <SkillCategory title="Developer Tools" skills={[
+                  "AWS/Azure/GCP",
+                  "Docker",
+                  "Kubernetes",
                   "PyTorch",
-                  "TensorFlow"
+                  "NumPy",
+                  "Pandas",
+                  "Postman"
                 ]} />
 
                 <SkillCategory title="Miscellaneous" skills={[
-                  "Bash Scripting",
-                  "Docker",
+                  "MongoDB",
+                  "PostgreSQL/MySQL",
+                  "Stripe",
                   "Git",
                   "Jira",
-                  "Stripe",
-                  "Vercel"
+                  "Bash",
+                  "YAML"
                 ]} />
               </div>
             </div>
@@ -351,24 +357,24 @@ export default function PortfolioContent() {
                 <span className="text-[#d4af37]">04.</span> Get In Touch
               </h2>
 
-              <p className="text-white/80 mb-12 max-w-2xl">
+              <p className="text-white/80 mb-8 max-w-2xl">
                 Feel free to reach out if you want to collaborate on a project or just want to say hi!
               </p>
 
               <div className="grid grid-cols-1 gap-8">
                 <div className="space-y-8">
                   <ContactItem
-                    icon={<Github size={20} />}
-                    title="GitHub"
-                    value="github.com/seika5"
-                    link="https://github.com/seika5"
-                  />
-
-                  <ContactItem
                     icon={<Linkedin size={20} />}
                     title="LinkedIn"
                     value="linkedin.com/in/marryan"
                     link="https://www.linkedin.com/in/marryan/"
+                  />
+
+                  <ContactItem
+                    icon={<Github size={20} />}
+                    title="GitHub"
+                    value="github.com/seika5"
+                    link="https://github.com/seika5"
                   />
                   <div className="pt-8 border-t border-white/10">
                     <p className="text-white/60 text-sm">
