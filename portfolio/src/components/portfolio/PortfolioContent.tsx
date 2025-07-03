@@ -141,8 +141,6 @@ export default function PortfolioContent() {
 
                 <a
                   href="/Ryan_Mar_resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 px-6 py-3 rounded-md font-medium transition-colors flex items-center gap-2"
                 >
                   Download Resume
