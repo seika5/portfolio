@@ -124,12 +124,12 @@ export default function PortfolioContent() {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
                 Ryan Mar
               </h1>
-              <h2 className="text-base md:text-xl lg:text-2xl text-white/70 font-semibold mb-6">
+              <h2 className="text-base md:text-xl lg:text-2xl text-white/70 font-semibold mb-4">
                 Computer Science @ University of Southern California
               </h2>
               <p className="text-white/70 max-w-xl mb-8 text-lg">
                 I'm a passionate developer with experience in full stack development, cloud technologies, 
-                machine learning, and more. I enjoy building practical and novel applications.
+                machine learning, and more.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button
@@ -138,6 +138,14 @@ export default function PortfolioContent() {
                 >
                   Get in Touch
                 </button>
+                <a
+                  href="/Ryan_Mar_resume.pdf"
+                  download
+                  className="border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 px-6 py-3 rounded-md font-medium transition-colors flex items-center gap-2"
+                >
+                  <FileText size={20} />
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>
@@ -362,14 +370,6 @@ export default function PortfolioContent() {
                     value="linkedin.com/in/marryan"
                     link="https://www.linkedin.com/in/marryan/"
                   />
-
-                  <ContactItem
-                    icon={<FileText size={20} />}
-                    title="Resume"
-                    value="Download Resume (PDF)"
-                    link="/Ryan_Mar_resume.pdf"
-                  />
-
                   <div className="pt-8 border-t border-white/10">
                     <p className="text-white/60 text-sm">
                       Based in California
