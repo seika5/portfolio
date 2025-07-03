@@ -125,7 +125,7 @@ export default function PortfolioContent() {
                 Ryan Mar
               </h1>
               <h2 className="text-2xl md:text-4xl lg:text-5xl text-white/70 font-semibold mb-6">
-                Computer Science Major & Software Engineer
+                Computer Science Major @ University of Southern California
               </h2>
               <p className="text-white/70 max-w-xl mb-8 text-lg">
                 I'm a passionate developer with experience in full stack web development,
