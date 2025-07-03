@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-import { Github, Linkedin, ExternalLink, UserCircle, Code, Briefcase, Monitor, ChevronRight, FileText, Mail } from 'lucide-react';
+import { Github, Linkedin, ExternalLink, UserCircle, Code, Briefcase, Monitor, ChevronRight, Mail } from 'lucide-react';
 
 export default function PortfolioContent() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -145,8 +145,7 @@ export default function PortfolioContent() {
                   rel="noopener noreferrer"
                   className="border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37]/10 px-6 py-3 rounded-md font-medium transition-colors flex items-center gap-2"
                 >
-                  <FileText size={20} />
-                  See My Resume
+                  Download Resume
                 </a>
               </div>
             </div>
