@@ -182,7 +182,7 @@ export default function PortfolioContent() {
                     <div>
                       <h3 className="text-[#d4af37] text-lg font-semibold mb-2">Work Experience</h3>
 
-                      <p className="mb-1">Docflow Labs</p>
+                      <p className="mb-1">Docflow Labs Inc.</p>
                       <p className="text-sm text-white/60 mb-2">Software Engineer Intern</p>
 
                       <p className="mb-1">U.S. Department of Homeland Security</p>
