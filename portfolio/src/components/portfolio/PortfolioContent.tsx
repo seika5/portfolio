@@ -266,13 +266,23 @@ export default function PortfolioContent() {
 
               <div className="space-y-16">
                 <ProjectCard
+                  title="Relay"
+                  description="Hyper-private self-hosted E2EE messaging and encrypted voice/video. Server hosted on DigitalOcean Droplet in testing."
+                  tags={["DigitalOcean", "E2EE", "Next.js", "Prisma", "WebRTC"]}
+                  imageUrl="/prj/relay.png"
+                  githubUrl="https://github.com/seika5/relay"
+                  liveUrl=""
+                  reverse={false}
+                />
+
+                <ProjectCard
                   title="SpeedSanta"
                   description="A digitalized version of a gift-exchange game inspired by Secret Santa. Utilizes Next.js, Tailwind CSS, and Google Firebase to serve and retrieve data through a mobile-friendly interface."
                   tags={["Christmas", "Firebase", "Next.js"]}
                   imageUrl="/prj/secretsanta.png"
                   githubUrl="https://github.com/seika5/speedsanta"
                   liveUrl="https://speedsanta.vercel.app"
-                  reverse={false}
+                  reverse={true}
                 />
 
                 <ProjectCard
@@ -282,7 +292,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/jamster.png"
                   githubUrl="https://github.com/seika5/jamster-react-app"
                   liveUrl="https://jamster.vercel.app"
-                  reverse={true}
+                  reverse={false}
                 />
 
                 <ProjectCard
@@ -292,7 +302,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/thttt.png"
                   githubUrl="https://github.com/seika5/th-ttt"
                   liveUrl="https://th-ttt.vercel.app"
-                  reverse={false}
+                  reverse={true}
                 />
 
                 <ProjectCard
@@ -302,7 +312,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/mooguard.png"
                   githubUrl="https://github.com/airwuu/MooGuard"
                   liveUrl=""
-                  reverse={true}
+                  reverse={false}
                 />
 
                 <ProjectCard
@@ -312,7 +322,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/djndatavisualizer.png"
                   githubUrl="https://github.com/seika5/api-data-visualizer"
                   liveUrl=""
-                  reverse={false}
+                  reverse={true}
                 />
 
                 <ProjectCard
@@ -322,7 +332,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/croppydeals.png"
                   githubUrl="https://github.com/airhornwho/croppydeals"
                   liveUrl="https://croppydeals-alpha.vercel.app"
-                  reverse={true}
+                  reverse={false}
                 />
 
                 <ProjectCard
@@ -332,7 +342,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/yukai.png"
                   githubUrl="https://github.com/seika5/shirtmarket"
                   liveUrl=""
-                  reverse={false}
+                  reverse={true}
                 />
 
                 <ProjectCard
@@ -342,7 +352,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/bytech.png"
                   githubUrl="https://github.com/Teddygat0r/dualhacks"
                   liveUrl="https://dualhacks.vercel.app"
-                  reverse={true}
+                  reverse={false}
                 />
 
                 <ProjectCard
@@ -352,7 +362,7 @@ export default function PortfolioContent() {
                   imageUrl="/prj/wildeyeai.png"
                   githubUrl="https://github.com/seika5/deepimageclassifier"
                   liveUrl=""
-                  reverse={false}
+                  reverse={true}
                 />
               </div>
             </div>
