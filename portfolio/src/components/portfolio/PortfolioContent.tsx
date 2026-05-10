@@ -185,7 +185,7 @@ export default function PortfolioContent() {
                       <p className="mb-1">Jane Street</p>
                       <p className="text-sm text-white/60 mb-2">Trade Desk Operations Engineer Intern</p>
 
-                      <p className="mb-1">Docflow Labs Inc.</p>
+                      <p className="mb-1">Docflow Labs</p>
                       <p className="text-sm text-white/60 mb-2">Software Engineer Intern</p>
 
                       <p className="mb-1">U.S. Department of Homeland Security</p>
