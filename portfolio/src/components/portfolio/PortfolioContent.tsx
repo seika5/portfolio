@@ -294,7 +294,7 @@ export default function PortfolioContent() {
                   tags={["AI", "IoT", "Livestock Monitoring", "TensorFlow"]}
                   imageUrl="/prj/mooguard.png"
                   githubUrl="https://github.com/airwuu/MooGuard"
-                  liveUrl=""
+                  liveUrl="https://devpost.com/software/mooguard"
                   reverse={false}
                 />
 
@@ -304,7 +304,7 @@ export default function PortfolioContent() {
                   tags={["Agriculture", "Data Analysis", "Digital Marketplace", "React"]}
                   imageUrl="/prj/croppydeals.png"
                   githubUrl="https://github.com/airhornwho/croppydeals"
-                  liveUrl="https://croppydeals-alpha.vercel.app"
+                  liveUrl="https://devpost.com/software/croppy-deals"
                   reverse={true}
                 />
               </div>
