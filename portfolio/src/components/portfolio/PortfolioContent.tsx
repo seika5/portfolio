@@ -279,32 +279,12 @@ export default function PortfolioContent() {
                 />
 
                 <ProjectCard
-                  title="SpeedSanta"
-                  description="A digitalized version of a gift-exchange game inspired by Secret Santa. Utilizes Next.js, Tailwind CSS, and Google Firebase to serve and retrieve data through a mobile-friendly interface."
-                  tags={["Christmas", "Firebase", "Next.js"]}
-                  imageUrl="/prj/secretsanta.png"
-                  githubUrl="https://github.com/seika5/speedsanta"
-                  liveUrl="https://speedsanta.vercel.app"
-                  reverse={true}
-                />
-
-                <ProjectCard
                   title="Jamster"
                   description="YouTube Music listen along website. Uses a browser extension to grab YouTube Music URL and saves the link to Firebase. React App pulls the URL from Firebase and plays the song for your friends."
                   tags={["Browser Extension", "Firebase", "Music", "React"]}
                   imageUrl="/prj/jamster.png"
                   githubUrl="https://github.com/seika5/jamster-react-app"
                   liveUrl="https://jamster.vercel.app"
-                  reverse={false}
-                />
-
-                <ProjectCard
-                  title="TH TicTacToe"
-                  description="Take-home project. Fully functional online Tic Tac Toe website built in 2 hours. Utilizes Google Firebase Cloud Firestore snapshot listeners to efficiently communicate data in real time."
-                  tags={["Firebase", "Game", "React"]}
-                  imageUrl="/prj/thttt.png"
-                  githubUrl="https://github.com/seika5/th-ttt"
-                  liveUrl="https://th-ttt.vercel.app"
                   reverse={true}
                 />
 
@@ -319,52 +299,12 @@ export default function PortfolioContent() {
                 />
 
                 <ProjectCard
-                  title="DjN Data Visualizer"
-                  description="Take-home project. Sandbox project using Next.js for frontend and Django REST Framework for backend API to visualize data. Containerized using Docker for easy deployment of full stack application."
-                  tags={["Data Visualization", "Django", "Docker", "Next.js"]}
-                  imageUrl="/prj/djndatavisualizer.png"
-                  githubUrl="https://github.com/seika5/api-data-visualizer"
-                  liveUrl=""
-                  reverse={true}
-                />
-
-                <ProjectCard
                   title="Croppy Deals"
                   description="Hackathon project, HackMerced IX 2nd place. Digital marketplace providing farmers with an alternative to contract farming and an easily accessible market data visualizer."
                   tags={["Agriculture", "Data Analysis", "Digital Marketplace", "React"]}
                   imageUrl="/prj/croppydeals.png"
                   githubUrl="https://github.com/airhornwho/croppydeals"
                   liveUrl="https://croppydeals-alpha.vercel.app"
-                  reverse={false}
-                />
-
-                <ProjectCard
-                  title="Yukai"
-                  description="Modern online merchandise store. Uses a full stack Django framework to handle user accounts, mailing system, purchases, and more. Uses Stripe for secure online payment handling."
-                  tags={["Django", "E-commerce", "Stripe"]}
-                  imageUrl="/prj/yukai.png"
-                  githubUrl="https://github.com/seika5/shirtmarket"
-                  liveUrl=""
-                  reverse={true}
-                />
-
-                <ProjectCard
-                  title="ByTech"
-                  description="Educational tool for computer science classes. Offers personalized assignment creation assistance for teachers and comprehensive assignment explanations for students."
-                  tags={["Computer Science", "Education", "LMS", "Web-based IDE"]}
-                  imageUrl="/prj/bytech.png"
-                  githubUrl="https://github.com/Teddygat0r/dualhacks"
-                  liveUrl="https://dualhacks.vercel.app"
-                  reverse={false}
-                />
-
-                <ProjectCard
-                  title="WildEyeAI"
-                  description="AI-based wildlife protection. Low-cost image classification model for wildlife conservation and data collection."
-                  tags={["AI", "Computer Vision", "TensorFlow", "Wildlife Conservation"]}
-                  imageUrl="/prj/wildeyeai.png"
-                  githubUrl="https://github.com/seika5/deepimageclassifier"
-                  liveUrl=""
                   reverse={true}
                 />
               </div>
