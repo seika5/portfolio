@@ -274,7 +274,7 @@ export default function PortfolioContent() {
                 <ProjectCard
                   title="Exurelay"
                   description="Hyper-private self-hosted E2EE messaging and encrypted voice/video. Built-in AWS CloudFormation template server setup."
-                  tags={["DigitalOcean", "E2EE", "Next.js", "Prisma", "WebRTC"]}
+                  tags={["AWS", "E2EE", "Next.js", "Prisma", "WebRTC"]}
                   imageUrl="/prj/relay.png"
                   githubUrl="https://github.com/seika5/relay"
                   liveUrl=""
