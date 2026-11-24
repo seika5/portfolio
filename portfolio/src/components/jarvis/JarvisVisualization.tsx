@@ -33,23 +33,27 @@ export function JarvisVisualization() {
     const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
 
     if (isTouch) {
-      const target = { az: 0, polar: Math.PI / 2 };
+      const ORBIT_TILT = 0.35; // radians (~20 degrees)
+      const target = { az: 0 };
       // Track the angle ourselves: OrbitControls reports azimuth wrapped to [-PI, PI],
       // which would make the easing take the long way round past 180 degrees.
-      const current = { az: 0, polar: Math.PI / 2 };
+      const current = { az: 0 };
       const handleScroll = () => {
         const max = document.documentElement.scrollHeight - window.innerHeight;
         const p = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
         target.az = p * Math.PI * 2;
-        target.polar = Math.PI / 2 + Math.sin(p * Math.PI * 2) * 0.25;
       };
       const animateScroll = () => {
         const c = controlsRef.current;
         current.az += (target.az - current.az) * 0.08;
-        current.polar += (target.polar - current.polar) * 0.08;
+        // Orbit along a circle tilted by ORBIT_TILT so the spin runs at an angle
+        // rather than flat around the vertical axis.
+        const x = Math.sin(current.az) * Math.cos(ORBIT_TILT);
+        const y = Math.sin(current.az) * Math.sin(ORBIT_TILT);
+        const z = Math.cos(current.az);
         if (c) {
-          c.setAzimuthalAngle(current.az);
-          c.setPolarAngle(current.polar);
+          c.setAzimuthalAngle(Math.atan2(x, z));
+          c.setPolarAngle(Math.acos(y));
           c.update();
         }
         animationFrameRef.current = requestAnimationFrame(animateScroll);
