@@ -200,9 +200,11 @@ export default function PortfolioContent() {
                 <div className="md:col-span-2">
                   <div className="aspect-square bg-gradient-to-br from-[#d4af37]/20 to-black/30 backdrop-blur-md rounded-md p-1">
                     <div className="w-full h-full border border-[#d4af37]/30 rounded overflow-hidden">
-                      <div className="w-full h-full bg-black/40 flex items-center justify-center text-[#d4af37]">
-                        <UserCircle size={80} />
-                      </div>
+                      <img
+                        src="/profile.jpg"
+                        alt="Ryan Mar"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
