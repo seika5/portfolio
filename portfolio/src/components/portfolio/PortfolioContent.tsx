@@ -117,9 +117,9 @@ export default function PortfolioContent() {
       </div>
 
       <main className="w-full lg:pl-24">
-        <section id="home" className="flex flex-col justify-center px-8 lg:px-16 py-32">
+        <section id="home" className="min-h-[100svh] lg:min-h-0 flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-6 pb-20 lg:py-32">
           <div className="max-w-3xl mx-auto w-full">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
+            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <p className="text-[#d4af37] mb-4 font-mono">Hello, my name is</p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
                 Ryan Mar
@@ -150,9 +150,9 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="about" className="py-32 px-8 lg:px-16">
+        <section id="about" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
+            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-[#d4af37]">01.</span> About Me
               </h2>
@@ -213,9 +213,9 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="skills" className="py-32 px-8 lg:px-16">
+        <section id="skills" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
+            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
                 <span className="text-[#d4af37]">02.</span> Skills & Technologies
               </h2>
@@ -265,9 +265,9 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="projects" className="py-32 px-8 lg:px-16">
+        <section id="projects" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
+            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
                 <span className="text-[#d4af37]">03.</span> Featured Projects
               </h2>
@@ -317,9 +317,9 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="contact" className="py-32 px-8 lg:px-16">
+        <section id="contact" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-10 shadow-xl">
+            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-[#d4af37]">04.</span> Get In Touch
               </h2>
@@ -356,7 +356,7 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <footer className="py-8 px-8 lg:px-16 border-t border-white/10 bg-black/50">
+        <footer className="pt-8 pb-24 lg:py-8 px-4 sm:px-8 lg:px-16 border-t border-white/10 bg-black/50">
           <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Ryan Mar. All rights reserved.
