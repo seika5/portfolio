@@ -123,7 +123,7 @@ export default function PortfolioContent() {
       <main className="w-full lg:pl-24">
         <section id="home" className="min-h-[100svh] flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-6 pb-20 lg:py-16">
           <div className="max-w-3xl mx-auto w-full">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <p className="text-[#d4af37] mb-4 font-mono">Hello, my name is</p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
                 Ryan Mar
@@ -156,7 +156,7 @@ export default function PortfolioContent() {
 
         <section id="about" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-[#d4af37]">01.</span> About Me
               </h2>
@@ -202,7 +202,7 @@ export default function PortfolioContent() {
                 </div>
 
                 <div className="md:col-span-2">
-                  <div className="aspect-square bg-gradient-to-br from-[#d4af37]/20 to-black/30 backdrop-blur-md rounded-md p-1">
+                  <div className="aspect-square bg-gradient-to-br from-[#d4af37]/20 to-black/30 rounded-md p-1">
                     <div className="w-full h-full border border-[#d4af37]/30 rounded overflow-hidden">
                       <img
                         src="/profile.jpg"
@@ -219,7 +219,7 @@ export default function PortfolioContent() {
 
         <section id="skills" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
                 <span className="text-[#d4af37]">02.</span> Skills & Technologies
               </h2>
@@ -270,7 +270,7 @@ export default function PortfolioContent() {
 
         <section id="projects" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
                 <span className="text-[#d4af37]">03.</span> Featured Projects
               </h2>
@@ -322,7 +322,7 @@ export default function PortfolioContent() {
 
         <section id="contact" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
+            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-[#d4af37]">04.</span> Get In Touch
               </h2>
@@ -409,7 +409,7 @@ function MobileNavItem({ icon, isActive, onClick }: { icon: React.ReactNode; isA
 
 function SkillCategory({ title, skills }: { title: string; skills: string[] }) {
   return (
-    <div className="bg-black/30 backdrop-blur-sm border border-white/10 rounded-lg p-6">
+    <div className="bg-black/30 border border-white/10 rounded-lg p-6">
       <h3 className="text-lg font-semibold mb-4 text-[#d4af37]">{title}</h3>
       <ul className="space-y-2">
         {skills.map((skill, index) => (
@@ -443,7 +443,7 @@ function ProjectCard({
   return (
     <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8`}>
       <div className="flex-1">
-        <div className="aspect-video bg-black/50 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
+        <div className="aspect-video bg-black/50 rounded-lg overflow-hidden border border-white/10">
           {imageUrl ? (
             <div
               className="w-full h-full bg-cover bg-center"
@@ -516,7 +516,7 @@ function ContactItem({
 }) {
   return (
     <div className="flex items-start gap-4">
-      <div className="p-3 bg-[#d4af37]/10 backdrop-blur-sm rounded-full text-[#d4af37]">
+      <div className="p-3 bg-[#d4af37]/10 rounded-full text-[#d4af37]">
         {icon}
       </div>
 
