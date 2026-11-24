@@ -16,10 +16,52 @@ export function JarvisVisualization() {
   const isMouseMovingRef = useRef(false);
   const lastMousePosRef = useRef({ x: 0, y: 0 });
   const lastTimeRef = useRef(performance.now());
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const goldColor = "#d4af37";
 
   useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+
+  useEffect(() => {
+    // Touch devices: drive the sphere's orientation from scroll position instead of taps.
+    const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
+    if (isTouch) {
+      const target = { az: 0, polar: Math.PI / 2 };
+      const handleScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const p = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
+        target.az = p * Math.PI * 2;
+        target.polar = Math.PI / 2 + Math.sin(p * Math.PI * 2) * 0.25;
+      };
+      const animateScroll = () => {
+        const c = controlsRef.current;
+        if (c) {
+          const az = c.getAzimuthalAngle();
+          const polar = c.getPolarAngle();
+          c.setAzimuthalAngle(az + (target.az - az) * 0.08);
+          c.setPolarAngle(polar + (target.polar - polar) * 0.08);
+          c.update();
+        }
+        animationFrameRef.current = requestAnimationFrame(animateScroll);
+      };
+      handleScroll();
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      window.addEventListener('resize', handleScroll);
+      animationFrameRef.current = requestAnimationFrame(animateScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
+        if (animationFrameRef.current) cancelAnimationFrame(animationFrameRef.current);
+      };
+    }
+
     const handleMouseMove = (e: MouseEvent) => {
       const currentTime = performance.now();
       const deltaTime = (currentTime - lastTimeRef.current) / 1000;
@@ -97,7 +139,7 @@ export function JarvisVisualization() {
   return (
     <div className="h-screen w-full bg-black relative">
       <Canvas className="transition-opacity duration-1000">
-        <PerspectiveCamera makeDefault position={[0, 0, 15]} />
+        <PerspectiveCamera makeDefault position={[0, 0, isDesktop ? 12 : 15]} />
         <ambientLight intensity={0.1} />
         <Suspense fallback={null}>
           <ParticleSystem
