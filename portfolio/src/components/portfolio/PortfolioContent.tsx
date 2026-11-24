@@ -272,8 +272,8 @@ export default function PortfolioContent() {
 
               <div className="space-y-16">
                 <ProjectCard
-                  title="Relay"
-                  description="Hyper-private self-hosted E2EE messaging and encrypted voice/video. Server hosted on DigitalOcean Droplet in testing."
+                  title="Exurelay"
+                  description="Hyper-private self-hosted E2EE messaging and encrypted voice/video. Built-in AWS CloudFormation template server setup."
                   tags={["DigitalOcean", "E2EE", "Next.js", "Prisma", "WebRTC"]}
                   imageUrl="/prj/relay.png"
                   githubUrl="https://github.com/seika5/relay"
