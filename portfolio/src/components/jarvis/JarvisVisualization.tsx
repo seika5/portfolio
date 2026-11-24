@@ -139,7 +139,7 @@ export function JarvisVisualization() {
   return (
     <div className="h-screen w-full bg-black relative">
       <Canvas className="transition-opacity duration-1000">
-        <PerspectiveCamera makeDefault position={[0, 0, isDesktop ? 10.5 : 15]} />
+        <PerspectiveCamera makeDefault position={[0, 0, isDesktop ? 12 : 15]} />
         <ambientLight intensity={0.1} />
         <Suspense fallback={null}>
           <ParticleSystem
