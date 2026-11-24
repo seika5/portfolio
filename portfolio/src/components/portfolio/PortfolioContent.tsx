@@ -39,9 +39,13 @@ export default function PortfolioContent() {
   return (
     <div className="flex min-h-screen text-white">
       <nav className="hidden lg:flex flex-col items-center w-24 bg-black/60 border-r border-white/10 fixed h-screen z-40">
-        <div className="font-mono text-xl mt-16 mb-12 rotate-90 tracking-wider whitespace-nowrap">
-          RYAN MAR
-        </div>
+        <button
+          onClick={() => scrollToSection('home')}
+          aria-label="Ryan Mar, back to top"
+          className="mt-10 mb-6 w-12 h-12 flex items-center justify-center border border-[#d4af37] rounded-md font-mono font-bold text-lg tracking-tight text-[#d4af37] hover:bg-[#d4af37]/10 transition-colors"
+        >
+          RM
+        </button>
 
         <div className="flex flex-col gap-10 items-center mt-8">
           <NavItem
@@ -86,7 +90,7 @@ export default function PortfolioContent() {
         </div>
       </nav>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-black/60 border-t border-white/10">
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-black border-t border-white/10">
         <div className="flex justify-around py-4">
           <MobileNavItem
             icon={<Monitor size={20} />}
@@ -237,8 +241,7 @@ export default function PortfolioContent() {
                   "Vue.js",
                   "Django",
                   "Node.js",
-                  "Express",
-                  "Spring.js"
+                  "Express"
                 ]} />
 
                 <SkillCategory title="Developer Tools" skills={[
