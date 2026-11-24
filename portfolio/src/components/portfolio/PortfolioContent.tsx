@@ -121,7 +121,7 @@ export default function PortfolioContent() {
       </div>
 
       <main className="w-full lg:pl-24">
-        <section id="home" className="min-h-[100svh] lg:min-h-0 flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-6 pb-20 lg:py-32">
+        <section id="home" className="min-h-[100svh] flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-6 pb-20 lg:py-16">
           <div className="max-w-3xl mx-auto w-full">
             <div className="card-container bg-black/25 backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <p className="text-[#d4af37] mb-4 font-mono">Hello, my name is</p>
