@@ -82,35 +82,3 @@ section {
 .gradient-border:hover::before {
   opacity: 0.8;
 }
-
-/* Profile picture frame with a slowly rotating gold glow */
-@property --glow-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.profile-glow {
-  border-radius: 0.75rem;
-  background: conic-gradient(
-    from var(--glow-angle),
-    rgba(212, 175, 55, 0.55),
-    rgba(212, 175, 55, 0.08) 25%,
-    rgba(0, 0, 0, 0.3) 50%,
-    rgba(212, 175, 55, 0.08) 75%,
-    rgba(212, 175, 55, 0.55)
-  );
-  animation: glow-spin 8s linear infinite;
-}
-
-@keyframes glow-spin {
-  to {
-    --glow-angle: 360deg;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .profile-glow {
-    animation: none;
-  }
-}

@@ -191,14 +191,12 @@ export default function PortfolioContent() {
                 </div>
 
                 <div className="md:col-span-2">
-                  <div className="aspect-square profile-glow p-1">
-                    <div className="w-full h-full border border-[#d4af37]/30 rounded-lg overflow-hidden">
-                      <img
-                        src="/profile.jpg"
-                        alt="Ryan Mar"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                  <div className="aspect-square rounded-lg overflow-hidden border border-white/10">
+                    <img
+                      src="/profile.jpg"
+                      alt="Ryan Mar"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
