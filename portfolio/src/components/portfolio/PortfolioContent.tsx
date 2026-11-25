@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-import { Github, Linkedin, ExternalLink, UserCircle, Code, Briefcase, Monitor, ChevronRight, Mail } from 'lucide-react';
+import { Github, Linkedin, ExternalLink, UserCircle, Briefcase, Monitor, Mail } from 'lucide-react';
 
 export default function PortfolioContent() {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -14,7 +14,7 @@ export default function PortfolioContent() {
       const windowHeight = window.innerHeight;
       const docHeight = document.body.offsetHeight;
 
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'contact'];
       const sectionElements = sections.map(id => document.getElementById(id));
 
       const currentSection = sectionElements.reduce((acc, section) => {
@@ -61,12 +61,6 @@ export default function PortfolioContent() {
             onClick={() => scrollToSection('about')}
           />
           <NavItem
-            id="skills"
-            icon={<Code size={20} />}
-            isActive={activeSection === 'skills'}
-            onClick={() => scrollToSection('skills')}
-          />
-          <NavItem
             id="projects"
             icon={<Briefcase size={20} />}
             isActive={activeSection === 'projects'}
@@ -101,11 +95,6 @@ export default function PortfolioContent() {
             icon={<UserCircle size={20} />}
             isActive={activeSection === 'about'}
             onClick={() => scrollToSection('about')}
-          />
-          <MobileNavItem
-            icon={<Code size={20} />}
-            isActive={activeSection === 'skills'}
-            onClick={() => scrollToSection('skills')}
           />
           <MobileNavItem
             icon={<Briefcase size={20} />}
@@ -202,8 +191,8 @@ export default function PortfolioContent() {
                 </div>
 
                 <div className="md:col-span-2">
-                  <div className="aspect-square bg-gradient-to-br from-[#d4af37]/20 to-black/30 rounded-md p-1">
-                    <div className="w-full h-full border border-[#d4af37]/30 rounded overflow-hidden">
+                  <div className="aspect-square profile-glow p-1">
+                    <div className="w-full h-full border border-[#d4af37]/30 rounded-lg overflow-hidden">
                       <img
                         src="/profile.jpg"
                         alt="Ryan Mar"
@@ -217,62 +206,11 @@ export default function PortfolioContent() {
           </div>
         </section>
 
-        <section id="skills" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
-          <div className="max-w-3xl mx-auto">
-            <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
-                <span className="text-[#d4af37]">02.</span> Skills & Technologies
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <SkillCategory title="Languages" skills={[
-                  "C/C++",
-                  "Java",
-                  "Python",
-                  "JavaScript",
-                  "TypeScript",
-                  "SQL",
-                  "HTML + CSS"
-                ]} />
-
-                <SkillCategory title="Frameworks" skills={[
-                  "React",
-                  "Next.js",
-                  "Vue.js",
-                  "Django",
-                  "Node.js",
-                  "Express"
-                ]} />
-
-                <SkillCategory title="Developer Tools" skills={[
-                  "AWS/Azure/GCP",
-                  "Docker",
-                  "Kubernetes",
-                  "PyTorch",
-                  "NumPy",
-                  "Pandas",
-                  "Postman"
-                ]} />
-
-                <SkillCategory title="Miscellaneous" skills={[
-                  "MongoDB",
-                  "PostgreSQL/MySQL",
-                  "Stripe",
-                  "Git",
-                  "Jira",
-                  "Bash",
-                  "YAML"
-                ]} />
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="projects" className="py-6 lg:py-32 px-4 sm:px-8 lg:px-16">
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-2">
-                <span className="text-[#d4af37]">03.</span> Featured Projects
+                <span className="text-[#d4af37]">02.</span> Featured Projects
               </h2>
 
               <div className="space-y-16">
@@ -324,7 +262,7 @@ export default function PortfolioContent() {
           <div className="max-w-3xl mx-auto">
             <div className="card-container bg-black/80 lg:bg-black/25 lg:backdrop-blur-md border border-white/10 rounded-lg p-6 sm:p-10 shadow-xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-2">
-                <span className="text-[#d4af37]">04.</span> Get In Touch
+                <span className="text-[#d4af37]">03.</span> Get In Touch
               </h2>
 
               <p className="text-white/80 mb-8 max-w-2xl">
@@ -404,22 +342,6 @@ function MobileNavItem({ icon, isActive, onClick }: { icon: React.ReactNode; isA
     >
       {icon}
     </button>
-  );
-}
-
-function SkillCategory({ title, skills }: { title: string; skills: string[] }) {
-  return (
-    <div className="bg-black/30 border border-white/10 rounded-lg p-6">
-      <h3 className="text-lg font-semibold mb-4 text-[#d4af37]">{title}</h3>
-      <ul className="space-y-2">
-        {skills.map((skill, index) => (
-          <li key={index} className="flex items-center gap-2 text-white/80">
-            <ChevronRight size={14} className="text-[#d4af37]" />
-            {skill}
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }
 
