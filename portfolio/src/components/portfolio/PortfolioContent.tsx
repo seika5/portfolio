@@ -202,8 +202,8 @@ export default function PortfolioContent() {
                 </div>
 
                 <div className="md:col-span-2">
-                  <div className="aspect-square bg-gradient-to-br from-[#d4af37]/20 to-black/30 rounded-md p-1">
-                    <div className="w-full h-full border border-[#d4af37]/30 rounded overflow-hidden">
+                  <div className="aspect-square profile-glow p-1">
+                    <div className="w-full h-full border border-[#d4af37]/30 rounded-lg overflow-hidden">
                       <img
                         src="/profile.jpg"
                         alt="Ryan Mar"
