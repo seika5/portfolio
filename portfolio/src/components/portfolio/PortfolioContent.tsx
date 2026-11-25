@@ -84,7 +84,7 @@ export default function PortfolioContent() {
         </div>
       </nav>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-black border-t border-white/10 pb-[env(safe-area-inset-bottom)]">
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-black border-t border-white/10">
         <div className="flex justify-around py-1">
           <MobileNavItem
             icon={<Monitor size={20} />}
